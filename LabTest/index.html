@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<title>My Food Review Corner</title>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {background-color: #FFB6C1;
+ color: #000000;
+ padding: 50px 16px;
+ font: 30px Arial;
+ color: white;
+ margin: 0;
+ }
+
+h2{
+  background: #e8e8e8;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+	margin-top: 0;
+}
+
+/* Style the topnav links */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.image {
+	max-width: 20%;
+	height: auto;
+}
+
+img {
+	border-style: none;
+	vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.column {
+  width: 100%;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+   font: 15px Arial, sans-serif;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.row {
+  display: flex;
+  margin-left:-5px;
+  margin-right:50px;
+  flex-wrap:wrap;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col-left {
+padding: 15px;
+padding-right: 10px;
+}
+
+
+.col-right {
+flex: 3;
+padding: 15px;
+margin: 0;
+}
+
+footer{
+	font-size: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+  flex-direction:column;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+
+<body>
+<h1 align="center"><b>My Food Review Corner</b></h1>
+
+<nav class="topnav">
+		<a href="index.html">Home</a>
+		<a href="my_food.html">Food</a>
+		<a href="my_restaurant.html">Restaurant</a>
+		<a href="my_trending.html">Trending</a>
+  </nav>
+
+<div class="row">
+<div class="col-left">
+<img class="image" src="img/avatar.jpeg">
+<h2>My Profile</h2>
+
+<table border = "1" width="200px">
+	<table border="1" width="80%">
+		<tr>
+			<td width="200">Name</td>
+			<td>Mohammad Nasiruddin Bin Darwis Awang</td>
+		</tr>
+		<tr>
+			<td width="200">Matric No.</td>
+			<td>BI21110038</td>
+		</tr>
+		<tr>
+			<td width="200">Age</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td width="200">Hometown</td>
+			<td>Kota Kinabalu, Sabah</td>
+		</tr>
+	</table>
+</div>
+
+<div class="col-right">
+<h2>Review From</h2>
+
+<table border = "1" width="100px">
+	<tr>
+			<td width = "35%">Food name:</td>
+			<td><form method = "POST" action = "">
+			<input type="text" size = ""><br>
+			</form></td>
+	</tr>
+
+	<tr>
+			<td>Food Category:</td>
+			<td><select size="1" name="Food_category">
+				<option value = "1">Rice</option>
+				<option value = "1">Noodle</option>
+				<option value = "1">Bread</option>
+				<option value = "1">Snack</option>
+			</select><br></td>
+	</tr>
+
+	<tr>
+			<td>Date:</td>
+			<td>
+				<input type="date" name="date" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="dd/mm/yyyy" required>
+			</td>
+	</tr>
+
+	<tr>
+			<td>Rating:</td>
+			<td>
+				<input type="radio" name="rating" value="1">&nbsp
+				<input type="radio" name="rating" value="2">&nbsp
+				<input type="radio" name="rating" value="3">&nbsp
+				<input type="radio" name="rating" value="4">&nbsp
+				<input type="radio" name="rating" value="5">&nbsp
+			</td>
+	</tr>
+
+	<tr>
+			<td width = "35%">Review:</td>
+			<td><p><textarea rows="4" name="remark" cols="20"></textarea></p></td>
+	</tr>
+
+	<tr>
+			<td>&nbsp;</td>
+			<td><p><input type="submit" value="Sumbit" name="B1"></td>
+	</tr>
+</table>
+  </div>
+</div>
+
+<footer>
+<small>@BI21110038 - Mohammad Nasiruddin Bin Darwis Awang</small>
+</footer>
+</body>
+</html>
